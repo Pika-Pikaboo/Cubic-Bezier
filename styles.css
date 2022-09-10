@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	max-width: 1300px;
+	height: 650px;
+	margin: 12rem auto;
+}
+
+.container>img {
+	flex: 1;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	overflow: hidden;
+	border-radius: 15px;
+	transition: flex 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.container>img:hover {
+	flex: 2.5;
+}
